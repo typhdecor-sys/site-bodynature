@@ -1,0 +1,192 @@
+<<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instant Body Nature — Typhanie Mohedano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2f7a4a;
+      --secondary: #f8fbf7;
+      --accent: #ffffff;
+      --muted: #6b6b6b;
+      --btn-hover: #1f5c36;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: var(--secondary); color: #111; line-height: 1.5; }
+    a { text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* HEADER */
+    header { background: var(--primary); padding: 18px 20px; color: var(--accent); position: sticky; top: 0; z-index: 10; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 18px; }
+    nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 18px; }
+    nav a { color: var(--accent); margin-left: 16px; font-weight: 600; transition: 0.3s; }
+    nav a:hover { color: #d3f0d1; }
+
+    /* HERO */
+    .hero { display: flex; flex-direction: column-reverse; gap: 24px; align-items: center; text-align: center; padding: 48px 0; }
+    .hero-content { max-width: 600px; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 12px; color: var(--primary); }
+    .hero p { color: #333; font-size: 1rem; margin-bottom: 20px; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .btn { background: var(--primary); color: var(--accent); padding: 12px 20px; border-radius: 10px; font-weight: 600; transition: 0.3s; }
+    .btn:hover { background: var(--btn-hover); }
+    .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+    .btn-outline:hover { background: var(--primary); color: var(--accent); }
+
+    /* MAIN */
+    main { padding: 36px 0; }
+    h2 { text-align: center; font-weight: 600; margin-bottom: 24px; color: var(--primary); }
+
+    /* CARDS */
+    .card { background: #fff; border-radius: 16px; box-shadow: 0 6px 18px rgba(15,20,15,0.08); padding: 20px; margin-bottom: 24px; text-align: center; }
+    .grid { display: grid; gap: 16px; justify-items: center; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
+
+    /* CATALOGUES */
+    .catalog-card img { border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 12px; }
+
+    /* FORMULAIRE */
+    form { display: flex; flex-direction: column; gap: 12px; text-align: left; max-width: 500px; margin: 0 auto; }
+    label { display: flex; flex-direction: column; font-weight: 500; font-size: 14px; color: var(--muted); }
+    input, select, textarea { padding: 10px; border-radius: 10px; border: 1px solid #ccc; font-size: 14px; }
+    button[type="submit"] { background: var(--primary); color: var(--accent); padding: 12px; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; }
+    button[type="submit"]:hover { background: var(--btn-hover); }
+
+    /* FOOTER */
+    footer { background: #f0f0f0; text-align: center; padding: 24px 0; color: var(--muted); font-size: 14px; }
+
+    @media(min-width: 768px){
+      .hero { flex-direction: row; text-align: left; gap: 40px; }
+      .hero img { max-width: 400px; border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="https://via.placeholder.com/60x60.png?text=BN" alt="Logo Body Nature">
+          Typhanie Mohedano
+        </div>
+        <div>
+          <a href="#catalogues">Catalogues</a>
+          <a href="#instant">Instant</a>
+          <a href="#a-propos">À propos</a>
+          <a href="#contact" class="btn-outline">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-content">
+      <h1>Bienvenue à votre Instant Body Nature</h1>
+      <p>Découvre les nouveautés Body Nature 2025, profite des promos et organise ton Instant Body Nature à domicile. Offre spéciale : <strong>35 € de cadeau</strong> + <strong>10 % sur la commande de groupe</strong>.</p>
+      <div class="hero-btns">
+        <a href="#instant" class="btn">Choisir mon Instant</a>
+        <a href="#catalogues" class="btn-outline">Voir les catalogues</a>
+      </div>
+    </div>
+    <img src="https://cdn.calameo.com/images/0049922640b210247dc9d/page1.jpg" alt="Instant Body Nature Hero">
+  </section>
+
+  <!-- MAIN -->
+  <main class="container">
+    <!-- CATALOGUES -->
+    <section id="catalogues" class="card">
+      <h2>Catalogues 2025 & Promos</h2>
+      <div class="catalog-card">
+        <img src="https://cdn.calameo.com/images/0049922640b210247dc9d/page1.jpg" alt="Aperçu Catalogue 2025">
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h4>Catalogue 2025</h4>
+          <a href="https://www.calameo.com/read/0049922640b210247dc9d" target="_blank" class="btn">Voir Catalogue 2025</a>
+        </div>
+        <div class="card">
+          <h4>Catalogue Novembre-Décembre 2025</h4>
+          <img src="https://cdn.calameo.com/images/0066380319c761fd5aa29/page1.jpg" alt="Aperçu Catalogue Nov-Déc" style="border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-bottom:12px;">
+          <a href="https://www.calameo.com/read/0066380319c761fd5aa29" target="_blank" class="btn">Voir Catalogue Novembre-Décembre</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTANT -->
+    <section id="instant" class="card">
+      <h2>Je choisis mon Instant Body Nature</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Soin du visage</h3>
+          <p>Atelier découverte des soins visage Body Nature, diagnostic et mini-soin.</p>
+          <a href="#contact" class="btn">Je choisis cet Instant</a>
+        </div>
+        <div class="card">
+          <h3>Produits ménagers</h3>
+          <p>Démonstration produits ménagers éco et astuces zéro déchet.</p>
+          <a href="#contact" class="btn">Je choisis cet Instant</a>
+        </div>
+        <div class="card">
+          <h3>Produits bien-être</h3>
+          <p>Présentation compléments et routines relaxantes.</p>
+          <a href="#contact" class="btn">Je choisis cet Instant</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="a-propos" class="card">
+      <h2>À propos de Typhanie Mohedano</h2>
+      <p>Bonjour ! Je m'appelle Typhanie Mohedano et je suis Conseillère Body Nature depuis [année].</p>
+      <p>Ma mission est de vous accompagner dans votre bien-être au quotidien, à travers des produits naturels, des conseils personnalisés et des Instants Body Nature à domicile.</p>
+      <p>J'adore partager mes astuces beauté, bien-être et maison écologique pour vous aider à profiter pleinement de chaque instant.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p><strong>Typhanie Mohedano – Conseillère Body Nature</strong></p>
+      <p>📧 <a href="mailto:typhanie.bodynature@gmail.com">typhanie.bodynature@gmail.com</a></p>
+      <p>📞 +33 7 83 09 20 89</p>
+
+      <!-- FORMULAIRE FORMSPREE -->
+      <form action="https://formspree.io/f/mvgvvndy" method="POST">
+        <label>Prénom & nom
+          <input type="text" name="name" required placeholder="Ex : Marie Dupont">
+        </label>
+        <label>Téléphone ou email
+          <input type="text" name="contact" required placeholder="06 00 00 00 00 ou mail@example.com">
+        </label>
+        <label>Préférence d'instant
+          <select name="instant-choice">
+            <option>Soin du visage</option>
+            <option>Produits ménagers</option>
+            <option>Produits bien-être</option>
+          </select>
+        </label>
+        <label>Message / préférences
+          <textarea name="message" rows="3" placeholder="Nombre d'invités, préférences, adresse..."></textarea>
+        </label>
+        <button type="submit">Envoyer ma demande</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> Typhanie Mohedano – Conseillère Body Nature
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
